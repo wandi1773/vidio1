@@ -163,6 +163,34 @@ proxies:
         Host: vpn.gratizz.biz.id
     udp: true
 
+  - name: SG 3008quiz.vidio.com
+    server: quiz.vidio.com
+    port: 443
+    type: trojan
+    password: 54b21e77-49d9-429e-9d31-df6235c5fe8d
+    skip-cert-verify: true
+    sni: anu.skrip.cloud
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: anu.skrip.cloud
+    udp: true
+
+  - name: SG 3008support.vidio.com
+    server: support.vidio.com
+    port: 443
+    type: trojan
+    password: 54b21e77-49d9-429e-9d31-df6235c5fe8d
+    skip-cert-verify: true
+    sni: anu.skrip.cloud
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: anu.skrip.cloud
+    udp: true
+
 proxy-groups:
   - name: select
     type: select
