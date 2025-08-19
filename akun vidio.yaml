@@ -196,7 +196,7 @@ proxy-groups:
     type: select
     health-check:
       enable: true
-      url: https://clients3.google.com/
+      url: http://www.gstatic.com/generate_204
       interval: 60
     proxies:
       - fallback
@@ -212,7 +212,7 @@ proxy-groups:
     type: fallback
     health-check:
       enable: true
-      url: https://clients3.google.com/
+      url: http://www.gstatic.com/generate_204
       interval: 60
     proxies:
       - id balance
@@ -226,14 +226,14 @@ proxy-groups:
     type: select
     health-check:
       enable: true
-      url: https://clients3.google.com/
+      url: http://www.gstatic.com/generate_204
       interval: 60
     include-all-proxies: true
   - name: sg balance
     type: load-balance
     health-check:
       enable: true
-      url: https://clients3.google.com/
+      url: http://www.gstatic.com/generate_204
       interval: 60
     include-all-proxies: true
     filter: SG
@@ -241,7 +241,7 @@ proxy-groups:
     type: load-balance
     health-check:
       enable: true
-      url: https://clients3.google.com/
+      url: http://www.gstatic.com/generate_204
       interval: 60
     include-all-proxies: true
     filter: ID
@@ -249,7 +249,7 @@ proxy-groups:
     type: url-test
     health-check:
       enable: true
-      url: https://clients3.google.com/
+      url: http://www.gstatic.com/generate_204
       interval: 60
     include-all-proxies: true
     filter: SG
@@ -257,7 +257,7 @@ proxy-groups:
     type: url-test
     health-check:
       enable: true
-      url: https://clients3.google.com/
+      url: http://www.gstatic.com/generate_204
       interval: 60
     include-all-proxies: true
     filter: ID
@@ -265,7 +265,7 @@ proxy-groups:
     type: fallback
     health-check:
       enable: true
-      url: https://clients3.google.com/
+      url: http://www.gstatic.com/generate_204
       interval: 60
     include-all-proxies: true
     filter: SG
@@ -273,7 +273,7 @@ proxy-groups:
     type: fallback
     health-check:
       enable: true
-      url: https://clients3.google.com/
+      url: http://www.gstatic.com/generate_204
       interval: 60
     include-all-proxies: true
     filter: ID
