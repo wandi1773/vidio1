@@ -1,0 +1,100 @@
+proxies:
+  - name: id 0909support.vidio.com
+    server: support.vidio.com
+    port: 443
+    type: vmess
+    uuid: 9364fca6-c904-4429-bebb-49a52c46814a
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id1.paketssh.site
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id1.paketssh.site
+    udp: true
+    
+  - name: id 0909quiz.vidio.com
+    server: quiz.vidio.com
+    port: 443
+    type: vmess
+    uuid: 9364fca6-c904-4429-bebb-49a52c46814a
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id1.paketssh.site
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id1.paketssh.site
+    udp: true
+    
+  - name: sg 2811quiz.vidio.com
+    server: quiz.vidio.com
+    port: 443
+    type: vless
+    uuid: f82d75b4-c952-4410-b6a3-314628c8ee1c
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: free.mediafairy.site
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: free.mediafairy.site
+    udp: true
+    
+  - name: sg 2811support.vidio.com
+    server: support.vidio.com
+    port: 443
+    type: vless
+    uuid: f82d75b4-c952-4410-b6a3-314628c8ee1c
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: free.mediafairy.site
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: free.mediafairy.site
+    udp: true
+
+  - name: id quiz.vidio.com @BitzBlack
+    server: quiz.vidio.com
+    port: 443
+    type: vless
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vpn.gratizz.MY.id
+    network: ws
+    ws-opts:
+      path: /Free/TG-at-BitzBlack/159.60.146.82-443
+      headers:
+        Host: vpn.gratizz.MY.id
+    udp: true
+
+  - name: id support.vidio.com @BitzBlack
+    server: support.vidio.com
+    port: 443
+    type: vless
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vpn.gratizz.MY.id
+    network: ws
+    ws-opts:
+      path: /Free/TG-at-BitzBlack/159.60.146.82-443
+      headers:
+        Host: vpn.gratizz.MY.id
+    udp: true
+
+ 
