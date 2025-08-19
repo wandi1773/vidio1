@@ -97,6 +97,40 @@ proxies:
         Host: vpn.gratizz.MY.id
     udp: true
 
+  - name: ID quiz.vidio.com
+    server: quiz.vidio.com
+    port: 443
+    type: vmess
+    uuid: cbd0053a-ac41-4cd9-a40c-cebd2b2c9582
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: zoomgov.bumiayu.cloud
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: cintakubertepuksebelahtangan.bumiayu.cloud
+    udp: true
+
+  - name: ID support.vidio.com
+    server: support.vidio.com
+    port: 443
+    type: vmess
+    uuid: cbd0053a-ac41-4cd9-a40c-cebd2b2c9582
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: zoomgov.bumiayu.cloud
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: cintakubertepuksebelahtangan.bumiayu.cloud
+    udp: true
+
 proxy-groups:
   - name: select
     type: select
@@ -113,6 +147,7 @@ proxy-groups:
       - sg ping
       - sg fallback
       - mix
+      - DIRECT
   - name: fallback
     type: fallback
     health-check:
