@@ -1,0 +1,200 @@
+proxies:
+  - name: 1708quiz.vidio.com
+    server: quiz.vidio.com
+    port: 443
+    type: vmess
+    uuid: 9b88ff88-6a98-496d-b519-241ac40c108c
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id1.paketssh.site
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id1.paketssh.site
+    udp: true
+
+  - name: 1708support.vidio.com
+    server: support.vidio.com
+    port: 443
+    type: vmess
+    uuid: 9b88ff88-6a98-496d-b519-241ac40c108c
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id1.paketssh.site
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id1.paketssh.site
+    udp: true
+
+  - name: 0909support.vidio.com
+    server: support.vidio.com
+    port: 443
+    type: vmess
+    uuid: 9364fca6-c904-4429-bebb-49a52c46814a
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id1.paketssh.site
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id1.paketssh.site
+    udp: true
+    
+  - name: 0909quiz.vidio.com
+    server: quiz.vidio.com
+    port: 443
+    type: vmess
+    uuid: 9364fca6-c904-4429-bebb-49a52c46814a
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id1.paketssh.site
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id1.paketssh.site
+    udp: true
+    
+  - name: 2811quiz.vidio.com
+    server: quiz.vidio.com
+    port: 443
+    type: vless
+    uuid: f82d75b4-c952-4410-b6a3-314628c8ee1c
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: free.mediafairy.site
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: free.mediafairy.site
+    udp: true
+    
+  - name: 2811support.vidio.com
+    server: support.vidio.com
+    port: 443
+    type: vless
+    uuid: f82d75b4-c952-4410-b6a3-314628c8ee1c
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: free.mediafairy.site
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: free.mediafairy.site
+    udp: true
+
+  - name: '(ID) quiz.vidio.com @BitzBlack'
+    server: 'quiz.vidio.com'
+    port: 443
+    type: 'vless'
+    uuid: 'aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1'
+    cipher: 'auto'
+    tls: true
+    skip-cert-verify: true
+    servername: 'vpn.gratizz.MY.id'
+    network: 'ws'
+    ws-opts:
+      path: '/Free/TG-at-BitzBlack/159.60.146.82-443'
+      headers:
+        Host: 'vpn.gratizz.MY.id'
+    udp: true
+
+  - name: '(ID) support.vidio.com @BitzBlack'
+    server: 'support.vidio.com'
+    port: 443
+    type: 'vless'
+    uuid: 'aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1'
+    cipher: 'auto'
+    tls: true
+    skip-cert-verify: true
+    servername: 'vpn.gratizz.MY.id'
+    network: 'ws'
+    ws-opts:
+      path: '/Free/TG-at-BitzBlack/159.60.146.82-443'
+      headers:
+        Host: 'vpn.gratizz.MY.id'
+    udp: true
+
+  - name: '2008quiz.vidio.com'
+    server: 'quiz.vidio.com'
+    port: 443
+    type: 'vless'
+    uuid: '49363ff9-0d9b-453e-8772-bc174fd2f98d'
+    cipher: 'auto'
+    tls: true
+    skip-cert-verify: true
+    servername: 'hdhddhysdgd.hahah.fun'
+    network: 'ws'
+    ws-opts:
+      path: '/vless'
+      headers:
+        Host: 'hdhddhysdgd.hahah.fun'
+    udp: true
+
+  - name: '2008support.vidio.com'
+    server: 'support.vidio.com'
+    port: 443
+    type: 'vless'
+    uuid: '49363ff9-0d9b-453e-8772-bc174fd2f98d'
+    cipher: 'auto'
+    tls: true
+    skip-cert-verify: true
+    servername: 'hdhddhysdgd.hahah.fun'
+    network: 'ws'
+    ws-opts:
+      path: '/vless'
+      headers:
+        Host: 'hdhddhysdgd.hahah.fun'
+    udp: true
+
+proxy-groups:
+  - name: load balance
+    type: load-balance
+    health-check:
+      enable: true
+      url: https://clients3.google.com/
+      interval: 60
+    include-all-proxies: true
+  - name: best-ping
+    type: url-test
+    health-check:
+      enable: true
+      url: https://clients3.google.com/
+      interval: 60
+    include-all-proxies: true
+  - name: fallback
+    type: fallback
+    health-check:
+      enable: true
+      url: https://clients3.google.com/
+      interval: 60
+    include-all-proxies: true
+  - name: select
+    type: select
+    health-check:
+      enable: true
+      url: https://clients3.google.com/
+      interval: 60
+    include-all-proxies: true
+rules:
+- GEOSITE,category-ads,REJECT
+- GEOSITE,category-ads-all,REJECT
+- MATCH,GLOBAL
+
+unified-delay: true
