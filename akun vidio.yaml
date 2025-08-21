@@ -97,40 +97,6 @@ proxies:
         Host: vpn.gratizz.MY.id
     udp: true
 
-  - name: ID quiz.vidio.combumiayu
-    server: quiz.vidio.com
-    port: 443
-    type: vmess
-    uuid: cbd0053a-ac41-4cd9-a40c-cebd2b2c9582
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: zoomgov.bumiayu.cloud
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: cintakubertepuksebelahtangan.bumiayu.cloud
-    udp: true
-
-  - name: ID support.vidio.combumiayu
-    server: support.vidio.com
-    port: 443
-    type: vmess
-    uuid: cbd0053a-ac41-4cd9-a40c-cebd2b2c9582
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: zoomgov.bumiayu.cloud
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: cintakubertepuksebelahtangan.bumiayu.cloud
-    udp: true
-
   - name: SG quiz.vidio.com @BitzBlack
     server: quiz.vidio.com
     port: 443
@@ -189,40 +155,6 @@ proxies:
       path: /trojan-ws
       headers:
         Host: anu.skrip.cloud
-    udp: true
-
-  - name: ID quiz.vidio.comspiderman
-    server: quiz.vidio.com
-    port: 443
-    type: vmess
-    uuid: 3fbb89d4-32fa-4e6c-b2c4-548e1f895d14
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ger.spidermanprem.online
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: ger.spidermanprem.online
-    udp: true
-
-  - name: ID support.vidio.comspiderman
-    server: support.vidio.com
-    port: 443
-    type: vmess
-    uuid: 3fbb89d4-32fa-4e6c-b2c4-548e1f895d14
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ger.spidermanprem.online
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: ger.spidermanprem.online
     udp: true
 
 proxy-groups:
