@@ -124,40 +124,40 @@ proxies:
       headers:
         Host: anu.skrip.cloud
     udp: true
-
-- name: ID quiz.vidio.compmlangsungVM588
-  server: quiz.vidio.com
-  type: vmess
-  port: 443
-  uuid: 8fa73eb4-4948-4a45-b47c-7ab8b852dc24
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: sedekahid.dekaa.my.id
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: sedekahid.dekaa.my.id
-  udp: true
-
-- name: ID support.vidio.compmlangsungVM588
-  server: support.vidio.com
-  type: vmess
-  port: 443
-  uuid: 8fa73eb4-4948-4a45-b47c-7ab8b852dc24
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: sedekahid.dekaa.my.id
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: sedekahid.dekaa.my.id
-  udp: true
+    
+ - name: ID quiz.vidio.compmlangsungVM588
+   server: quiz.vidio.com
+   type: vmess
+   port: 443
+   uuid: 8fa73eb4-4948-4a45-b47c-7ab8b852dc24
+   alterId: 0
+   cipher: auto
+   tls: true
+   skip-cert-verify: true
+   servername: sedekahid.dekaa.my.id
+   network: ws
+   ws-opts:
+     path: /vmess
+     headers:
+       Host: sedekahid.dekaa.my.id
+   udp: true
+   
+ - name: ID support.vidio.compmlangsungVM588
+   server: support.vidio.com
+   type: vmess
+   port: 443
+   uuid: 8fa73eb4-4948-4a45-b47c-7ab8b852dc24
+   alterId: 0
+   cipher: auto
+   tls: true
+   skip-cert-verify: true
+   servername: sedekahid.dekaa.my.id
+   network: ws
+   ws-opts:
+     path: /vmess
+     headers:
+       Host: sedekahid.dekaa.my.id
+   udp: true
 
 proxy-groups:
   - name: select
