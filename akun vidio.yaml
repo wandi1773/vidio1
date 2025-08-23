@@ -158,6 +158,40 @@ proxies:
       headers:
         Host: sedekahid.dekaa.my.id
     udp: true
+    
+  - name: ID quiz.vidio.comspiderman
+    server: quiz.vidio.com
+    port: 443
+    type: vmess
+    uuid: 3fbb89d4-32fa-4e6c-b2c4-548e1f895d14
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ger.spidermanprem.online
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: ger.spidermanprem.online
+    udp: true
+    
+  - name: ID support.vidio.comspiderman
+    server: support.vidio.com
+    port: 443
+    type: vmess
+    uuid: 3fbb89d4-32fa-4e6c-b2c4-548e1f895d14
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ger.spidermanprem.online
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: ger.spidermanprem.online
+    udp: true
 
 proxy-groups:
   - name: select
