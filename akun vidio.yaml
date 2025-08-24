@@ -192,6 +192,37 @@ proxies:
       headers:
         Host: ger.spidermanprem.online
     udp: true
+    
+  - name: SG quiz.int.vidio.commediafairy
+    server: quiz.int.vidio.com
+    port: 443
+    type: vless
+    uuid: a55038e0-93ff-4c3c-b25a-a50a01f49043
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: free.mediafairy.site
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: free.mediafairy.site
+    udp: true
+  - name: SG support.vidio.commediafairy
+    server: support.vidio.com
+    port: 443
+    type: vless
+    uuid: a55038e0-93ff-4c3c-b25a-a50a01f49043
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: free.mediafairy.site
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: free.mediafairy.site
+    udp: true
 
 proxy-groups:
   - name: select
