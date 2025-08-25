@@ -307,10 +307,33 @@ proxy-groups:
       interval: 60
     include-all-proxies: true
     filter: ID
+
+rule-providers:
+  basicads:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_basicads.yaml
+    interval: 86400
+  
+  personalads:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_personalads.yaml
+    interval: 86400
+    
+  indo:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/malikshi/open_clash/refs/heads/main/rule_provider/rule_indo.yaml
+    interval: 86400
+    
 rules:
 - GEOSITE,category-ads,REJECT
 - GEOSITE,category-ads-all,REJECT
+- RULE-SET,basicads,REJECT
+- RULE-SET,personalads,REJECT
 - GEOSITE,netflix,id ping
+- RULE-SET,indo,id ping
 - MATCH,select
 
 unified-delay: true
