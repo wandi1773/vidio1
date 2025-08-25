@@ -33,7 +33,7 @@ proxies:
         Host: id1.paketssh.site
     udp: true
     
-  - name: ID quiz.vidio.com @BitzBlack
+  - name: quiz.vidio.com @BitzBlack
     server: quiz.vidio.com
     port: 443
     type: vless
@@ -49,7 +49,7 @@ proxies:
         Host: vpn.gratizz.MY.id
     udp: true
 
-  - name: ID support.vidio.com @BitzBlack
+  - name: support.vidio.com @BitzBlack
     server: support.vidio.com
     port: 443
     type: vless
@@ -180,6 +180,33 @@ proxies:
     network: ws
     ws-opts:
       path: /Free/TG-at-BitzBlack/43.218.77.16-443
+      headers:
+        Host: vpn.gratizz.biz.id
+    udp: true
+    
+  - name: ID quiz.vidio.comPusat Media Indonesia @BitzBlack
+    server: quiz.vidio.com
+    port: 443
+    type: trojan
+    password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    skip-cert-verify: true
+    sni: vpn.gratizz.biz.id
+    network: ws
+    ws-opts:
+      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
+      headers:
+        Host: vpn.gratizz.biz.id
+    udp: true
+  - name: ID support.vidio.comPusat Media Indonesia @BitzBlack
+    server: support.vidio.com
+    port: 443
+    type: trojan
+    password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    skip-cert-verify: true
+    sni: vpn.gratizz.biz.id
+    network: ws
+    ws-opts:
+      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
       headers:
         Host: vpn.gratizz.biz.id
     udp: true
