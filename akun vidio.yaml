@@ -210,6 +210,40 @@ proxies:
       headers:
         Host: vpn.gratizz.biz.id
     udp: true
+    
+  - name: ID quiz.vidio.comampunsuhu
+    server: quiz.vidio.com
+    port: 443
+    type: vmess
+    uuid: ea5ba707-c1ad-4546-899d-80566e8eac6a
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ger.spidermanprem.online
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: ger.spidermanprem.online
+    udp: true
+  - name: ID support.vidio.comampunsuhu
+    server: support.vidio.com
+    port: 443
+    type: vmess
+    uuid: ea5ba707-c1ad-4546-899d-80566e8eac6a
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ger.spidermanprem.online
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: ger.spidermanprem.online
+    udp: true
+
 
 proxy-groups:
   - name: select
