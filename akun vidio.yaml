@@ -125,37 +125,6 @@ proxies:
         Host: anu.skrip.cloud
     udp: true
     
-  - name: SG quiz.int.vidio.commediafairy
-    server: quiz.int.vidio.com
-    port: 443
-    type: vless
-    uuid: a55038e0-93ff-4c3c-b25a-a50a01f49043
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: free.mediafairy.site
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: free.mediafairy.site
-    udp: true
-  - name: SG support.vidio.commediafairy
-    server: support.vidio.com
-    port: 443
-    type: vless
-    uuid: a55038e0-93ff-4c3c-b25a-a50a01f49043
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: free.mediafairy.site
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: free.mediafairy.site
-    udp: true
-    
   - name: LT id quiz.vidio.comAmazoncom@BitzBlack
     server: quiz.vidio.com
     port: 443
@@ -242,6 +211,39 @@ proxies:
       path: /vmess
       headers:
         Host: ger.spidermanprem.online
+    udp: true
+    
+  - name: SG quiz.vidio.commediafairy
+    server: quiz.vidio.com
+    port: 443
+    type: vmess
+    uuid: 1b5082a9-9b2b-457f-9660-501d9b539817
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: free.mediafairy.site
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: free.mediafairy.site
+    udp: true
+  - name: SG support.vidio.commediafairy
+    server: support.vidio.com
+    port: 443
+    type: vmess
+    uuid: 1b5082a9-9b2b-457f-9660-501d9b539817
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: free.mediafairy.site
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: free.mediafairy.site
     udp: true
 
 
