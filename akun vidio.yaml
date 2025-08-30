@@ -276,6 +276,39 @@ proxies:
       headers:
         Host: ger.spidermanprem.online
     udp: true
+    
+  - name: ID quiz.vidio.com Mitra Visioner Upgrade
+    server: quiz.vidio.com
+    port: 443
+    type: vmess
+    uuid: bbdf25db-a233-43dd-8294-065c214636f2
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: mitra.completed.pp.ua
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: mitra.completed.pp.ua
+    udp: true
+  - name: ID support.vidio.com Mitra Visioner Upgrade
+    server: support.vidio.com
+    port: 443
+    type: vmess
+    uuid: bbdf25db-a233-43dd-8294-065c214636f2
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: mitra.completed.pp.ua
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: mitra.completed.pp.ua
+    udp: true
 
 
 proxy-groups:
