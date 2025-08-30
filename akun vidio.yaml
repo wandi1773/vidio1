@@ -246,6 +246,40 @@ proxies:
       path: /nzr/8.219.59.132-48964
       headers:
         Host: nzr2805.site
+    
+  - name: SG 0409quiz.vidio.comvmess-ws-tls
+    server: quiz.vidio.com
+    port: 443
+    type: vmess
+    uuid: 57241b4f-54f0-4022-b952-8b4a825b1fe2
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: free-tendo.store
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: free-tendo.store
+    udp: true
+  - name: SG 0409support.vidio.comvmess-ws-tls
+    server: support.vidio.com
+    port: 443
+    type: vmess
+    uuid: 57241b4f-54f0-4022-b952-8b4a825b1fe2
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: free-tendo.store
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: free-tendo.store
+    udp: true
+    
 
 
 proxy-groups:
