@@ -217,36 +217,35 @@ proxies:
       headers:
         Host: mitra.completed.pp.ua
     udp: true
-    
-  - name: SG quiz.vidio.comAlibaba US Technology Co-[Tls]-[VL]-[AFR]
-    server: quiz.vidio.com
-    port: 443
-    type: vless
-    uuid: 22090db4-c13e-484a-ad3d-957b1607d28d
-    cipher: auto
-    tls: true
-    udp: false
-    network: ws
-    servername: nzr2805.site
-    ws-opts:
-      path: /nzr/8.219.59.132-48964
-      headers:
-        Host: nzr2805.site
         
   - name: SG support.vidio.comAlibaba US Technology Co-[Tls]-[VL]-[AFR]
-    server: support.vidio.com
-    port: 443
-    type: vless
-    uuid: 22090db4-c13e-484a-ad3d-957b1607d28d
-    cipher: auto
-    tls: true
-    udp: false
-    network: ws
-    servername: nzr2805.site
-    ws-opts:
-      path: /nzr/8.219.59.132-48964
-      headers:
-        Host: nzr2805.site
+    server: support.vidio.com
+    port: 443
+    type: vless
+    uuid: 22090db4-c13e-484a-ad3d-957b1607d28d
+    tls: true
+    skip-cert-verify: true
+    servername: nzr2805.site
+    network: ws
+    ws-opts:
+      path: /nzr/8.219.59.132-48964
+      headers:
+        Host: nzr2805.site
+    udp: true
+  - name: SG quiz.vidio.comAlibaba US Technology Co-[Tls]-[VL]-[AFR]
+    server: quiz.vidio.com
+    port: 443
+    type: vless
+    uuid: 22090db4-c13e-484a-ad3d-957b1607d28d
+    tls: true
+    skip-cert-verify: true
+    servername: nzr2805.site
+    network: ws
+    ws-opts:
+      path: /nzr/8.219.59.132-48964
+      headers:
+        Host: nzr2805.site
+    udp: true
     
   - name: SG 0409quiz.vidio.comvmess-ws-tls
     server: quiz.vidio.com
