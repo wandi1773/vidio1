@@ -306,7 +306,7 @@ proxies:
       path: /nzr/156.244.1.250-8443
       headers:
         Host: afrcloud.site
-  - name: "LT id - CV. Rumahweb Indonesia [VLESS]"
+  - name: "LT id Rumahweb1"
     type: vless
     server: Quiz.vidio.com
     port: 443
