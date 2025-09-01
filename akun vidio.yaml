@@ -280,6 +280,72 @@ proxies:
         Host: free-tendo.store
     udp: true
     
+  - name: "LT id - PT Pusat Media Indonesia [VLESS]"
+    type: vless
+    server: Quiz.vidio.com
+    port: 443
+    uuid: 1bc96b79-9ac2-4861-ac68-7d28c86b8daf
+    network: ws
+    tls: true
+    servername: afrcloud.site
+    skip-cert-verify: false
+    ws-opts:
+      path: /nzr/103.6.207.108-8080
+      headers:
+        Host: afrcloud.site
+  - name: "LT id - Kaopu Cloud HK Limited [VLESS]"
+    type: vless
+    server: Quiz.vidio.com
+    port: 443
+    uuid: f3778d7e-49fe-4dcb-a802-28df322ee6cf
+    network: ws
+    tls: true
+    servername: afrcloud.site
+    skip-cert-verify: false
+    ws-opts:
+      path: /nzr/156.244.1.250-8443
+      headers:
+        Host: afrcloud.site
+  - name: "LT id - CV. Rumahweb Indonesia [VLESS]"
+    type: vless
+    server: Quiz.vidio.com
+    port: 443
+    uuid: 74bd7f75-9432-4fdf-acc6-6a95bb6b6775
+    network: ws
+    tls: true
+    servername: afrcloud.site
+    skip-cert-verify: false
+    ws-opts:
+      path: /nzr/203.194.112.119-2053
+      headers:
+        Host: afrcloud.site
+  - name: "LT id - CV. Rumahweb Indonesia [VLESS]"
+    type: vless
+    server: Quiz.vidio.com
+    port: 443
+    uuid: f056ab7e-71c4-4a96-b916-9aeaf13cf502
+    network: ws
+    tls: true
+    servername: afrcloud.site
+    skip-cert-verify: false
+    ws-opts:
+      path: /nzr/203.194.112.119-8443
+      headers:
+        Host: afrcloud.site
+  - name: "LT id - Alibaba Cloud [VLESS]"
+    type: vless
+    server: Quiz.vidio.com
+    port: 443
+    uuid: 027fab43-1eb8-491b-8735-220f3c1d62d8
+    network: ws
+    tls: true
+    servername: afrcloud.site
+    skip-cert-verify: false
+    ws-opts:
+      path: /nzr/149.129.250.8-443
+      headers:
+        Host: afrcloud.site
+    
 
 
 proxy-groups:
