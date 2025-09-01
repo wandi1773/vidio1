@@ -291,6 +291,72 @@ proxies:
       headers:
         Host: afrcloud.site
     
+  - name: "LT sg - Amazon [VLESS]"
+    type: vless
+    server: Quiz.vidio.com
+    port: 443
+    uuid: 243b272c-ee94-49f5-aa51-7ffc82dd3202
+    network: ws
+    tls: true
+    servername: rmtq.dpdns.org
+    skip-cert-verify: false
+    ws-opts:
+      path: /nzr/13.250.31.132-443
+      headers:
+        Host: rmtq.dpdns.org
+  - name: "LT sg - DigitalOcean [VLESS]"
+    type: vless
+    server: Quiz.vidio.com
+    port: 443
+    uuid: fd14fa0e-474b-4703-a762-2fabc21908c3
+    network: ws
+    tls: true
+    servername: rmtq.dpdns.org
+    skip-cert-verify: false
+    ws-opts:
+      path: /nzr/128.199.255.155-8443
+      headers:
+        Host: rmtq.dpdns.org
+  - name: "LT sg - M247 Europe SRL [VLESS]"
+    type: vless
+    server: Quiz.vidio.com
+    port: 443
+    uuid: c2028ca6-03e7-47f5-8a0d-8d7aa56e2e3a
+    network: ws
+    tls: true
+    servername: rmtq.dpdns.org
+    skip-cert-verify: false
+    ws-opts:
+      path: /nzr/38.180.249.123-443
+      headers:
+        Host: rmtq.dpdns.org
+  - name: "LT sg - Alibaba [VLESS]"
+    type: vless
+    server: Quiz.vidio.com
+    port: 443
+    uuid: 227a2f93-d587-4704-b25b-e4e79a05ec91
+    network: ws
+    tls: true
+    servername: rmtq.dpdns.org
+    skip-cert-verify: false
+    ws-opts:
+      path: /nzr/161.117.81.41-443
+      headers:
+        Host: rmtq.dpdns.org
+  - name: "LT sg - Tencent Building [VLESS]"
+    type: vless
+    server: Quiz.vidio.com
+    port: 443
+    uuid: 941d6083-737c-4847-8bb1-1565dda81477
+    network: ws
+    tls: true
+    servername: rmtq.dpdns.org
+    skip-cert-verify: false
+    ws-opts:
+      path: /nzr/43.128.95.110-40029
+      headers:
+        Host: rmtq.dpdns.org
+    
 
 
 proxy-groups:
