@@ -356,7 +356,22 @@ proxies:
       path: /nzr/43.128.95.110-40029
       headers:
         Host: rmtq.dpdns.org
-    
+  - name:LT sgPVULTRCUST - TLS
+    type: vless
+    server: quiz.vidio.com
+    port: 443
+    uuid: eeeeeee3-eeee-4eee-aeee-eeeeeeeeeee5
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: free.tunneling.qzz.io
+    network: ws
+    udp: true
+    ws-opts:
+      path: /139.180.159.133=443
+      headers:
+        Host: free.tunneling.qzz.io
+  
 
 
 proxy-groups:
