@@ -356,7 +356,7 @@ proxies:
       path: /nzr/43.128.95.110-40029
       headers:
         Host: rmtq.dpdns.org
-  - name:LT sgPVULTRCUST - TLS
+  - name: LT sgPVULTRCUST - TLS
     type: vless
     server: quiz.vidio.com
     port: 443
