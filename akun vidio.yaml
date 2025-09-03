@@ -33,165 +33,6 @@ proxies:
         Host: id1.paketssh.site
     udp: true
     
-  - name: ID quiz.vidio.comampunsuhu
-    server: quiz.vidio.com
-    port: 443
-    type: vmess
-    uuid: ea5ba707-c1ad-4546-899d-80566e8eac6a
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ger.spidermanprem.online
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: ger.spidermanprem.online
-    udp: true
-  - name: ID support.vidio.comampunsuhu
-    server: support.vidio.com
-    port: 443
-    type: vmess
-    uuid: ea5ba707-c1ad-4546-899d-80566e8eac6a
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ger.spidermanprem.online
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: ger.spidermanprem.online
-    udp: true
-    
-  - name: SG quiz.vidio.commediafairy
-    server: quiz.vidio.com
-    port: 443
-    type: vmess
-    uuid: 1b5082a9-9b2b-457f-9660-501d9b539817
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: free.mediafairy.site
-    network: ws
-    ws-opts:
-      path: /vmess-ws
-      headers:
-        Host: free.mediafairy.site
-    udp: true
-  - name: SG support.vidio.commediafairy
-    server: support.vidio.com
-    port: 443
-    type: vmess
-    uuid: 1b5082a9-9b2b-457f-9660-501d9b539817
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: free.mediafairy.site
-    network: ws
-    ws-opts:
-      path: /vmess-ws
-      headers:
-        Host: free.mediafairy.site
-    udp: true
-    
-  - name: ID quiz.vidio.comspider
-    server: quiz.vidio.com
-    port: 443
-    type: vless
-    uuid: 94ca2e7e-0a39-4624-812a-6a29e3f992ba
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ger.spidermanprem.online
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: ger.spidermanprem.online
-    udp: true
-  - name: ID support.vidio.comspider
-    server: support.vidio.com
-    port: 443
-    type: vless
-    uuid: 94ca2e7e-0a39-4624-812a-6a29e3f992ba
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ger.spidermanprem.online
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: ger.spidermanprem.online
-    udp: true
-    
-  - name: ID quiz.vidio.com Mitra Visioner Upgrade
-    server: quiz.vidio.com
-    port: 443
-    type: vmess
-    uuid: bbdf25db-a233-43dd-8294-065c214636f2
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: mitra.completed.pp.ua
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: mitra.completed.pp.ua
-    udp: true
-  - name: ID support.vidio.com Mitra Visioner Upgrade
-    server: support.vidio.com
-    port: 443
-    type: vmess
-    uuid: bbdf25db-a233-43dd-8294-065c214636f2
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: mitra.completed.pp.ua
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: mitra.completed.pp.ua
-    udp: true
-        
-  - name: SG support.vidio.comAlibaba US Technology Co-[Tls]-[VL]-[AFR]
-    server: support.vidio.com
-    port: 443
-    type: vless
-    uuid: 22090db4-c13e-484a-ad3d-957b1607d28d
-    tls: true
-    skip-cert-verify: true
-    servername: nzr2805.site
-    network: ws
-    ws-opts:
-      path: /nzr/8.219.59.132-48964
-      headers:
-        Host: nzr2805.site
-    udp: true
-  - name: SG quiz.vidio.comAlibaba US Technology Co-[Tls]-[VL]-[AFR]
-    server: quiz.vidio.com
-    port: 443
-    type: vless
-    uuid: 22090db4-c13e-484a-ad3d-957b1607d28d
-    tls: true
-    skip-cert-verify: true
-    servername: nzr2805.site
-    network: ws
-    ws-opts:
-      path: /nzr/8.219.59.132-48964
-      headers:
-        Host: nzr2805.site
-    udp: true
-    
   - name: SG 0409quiz.vidio.comvmess-ws-tls
     server: quiz.vidio.com
     port: 443
@@ -486,6 +327,18 @@ proxy-groups:
       interval: 60
     include-all-proxies: true
     filter: LT
+  - name: game
+    type: fallback
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 60
+    proxies:
+      - id ping
+      - id balance
+      - sg ping
+      - sg balance
+     
 
 rule-providers:
   basicads:
@@ -513,6 +366,7 @@ rules:
 - RULE-SET,personalads,REJECT
 - GEOSITE,netflix,id ping
 - RULE-SET,indo,id ping
+- GEOSITE,mihoyo,game
 - MATCH,select
 
 unified-delay: true
