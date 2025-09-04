@@ -244,10 +244,6 @@
         Host: vless.zerostore.tech
     udp: true
 
-
-  
-
-
 proxy-groups:
   - name: select
     type: select
