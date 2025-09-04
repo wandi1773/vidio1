@@ -33,39 +33,6 @@ proxies:
         Host: id1.paketssh.site
     udp: true
     
-  - name: SG 0409quiz.vidio.comvmess-ws-tls
-    server: quiz.vidio.com
-    port: 443
-    type: vmess
-    uuid: 57241b4f-54f0-4022-b952-8b4a825b1fe2
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: free-tendo.store
-    network: ws
-    ws-opts:
-      path: /vmess-ws
-      headers:
-        Host: free-tendo.store
-    udp: true
-  - name: SG 0409support.vidio.comvmess-ws-tls
-    server: support.vidio.com
-    port: 443
-    type: vmess
-    uuid: 57241b4f-54f0-4022-b952-8b4a825b1fe2
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: free-tendo.store
-    network: ws
-    ws-opts:
-      path: /vmess-ws
-      headers:
-        Host: free-tendo.store
-    udp: true
-    
   - name: CF sgPVULTRCUST - TLS
     type: vless
     server: quiz.vidio.com
@@ -126,6 +93,87 @@ proxies:
     servername: vless.zerostore.tech
     ws-opts:
       path: /vless=104.43.91.69=443
+      headers:
+        Host: vless.zerostore.tech
+    udp: true
+    
+  - name: SG 0809quiz.vidio.comfree-TLS
+    server: quiz.vidio.com
+    port: 443
+    type: vmess
+    uuid: b7b82f0c-7f3d-4c85-b309-bc2ff68b19e9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: oesr.ipserver.web.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: oesr.ipserver.web.id
+    udp: true
+  - name: SG 0809support.vidio.comfree-TLS
+    server: support.vidio.com
+    port: 443
+    type: vmess
+    uuid: b7b82f0c-7f3d-4c85-b309-bc2ff68b19e9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: oesr.ipserver.web.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: oesr.ipserver.web.id
+    udp: true
+    
+  - name: CF Onidel Pty LTD 🇸🇬
+    server: quiz.vidio.com
+    port: 443
+    type: vless
+    uuid: ZEROXNXX-XXXXXX-XXX
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    servername: vless.zerostore.tech
+    ws-opts:
+      path: /vless=160.22.79.155=443
+      headers:
+        Host: vless.zerostore.tech
+    udp: true
+    
+  - name: CF M Europe SRL 🇮🇩
+    server: quiz.vidio.com
+    port: 443
+    type: vless
+    uuid: ZEROXNXX-XXXXXX-XXX
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    servername: vless.zerostore.tech
+    ws-opts:
+      path: /vless=38.244.147.68=443
+      headers:
+        Host: vless.zerostore.tech
+    udp: true
+    
+  - name: CF Alibaba us Technology 🇸🇬
+    server: quiz.vidio.com
+    port: 443
+    type: vless
+    uuid: ZEROXNXX-XXXXXX-XXX
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    servername: vless.zerostore.tech
+    ws-opts:
+      path: /vless=8.222.161.217=443
       headers:
         Host: vless.zerostore.tech
     udp: true
