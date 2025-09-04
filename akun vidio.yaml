@@ -66,138 +66,7 @@ proxies:
         Host: free-tendo.store
     udp: true
     
-  - name: "LT id - PT Pusat Media Indonesia [VLESS]"
-    type: vless
-    server: Quiz.vidio.com
-    port: 443
-    uuid: 1bc96b79-9ac2-4861-ac68-7d28c86b8daf
-    network: ws
-    tls: true
-    servername: afrcloud.site
-    skip-cert-verify: false
-    ws-opts:
-      path: /nzr/103.6.207.108-8080
-      headers:
-        Host: afrcloud.site
-  - name: "LT id - Kaopu Cloud HK Limited [VLESS]"
-    type: vless
-    server: Quiz.vidio.com
-    port: 443
-    uuid: f3778d7e-49fe-4dcb-a802-28df322ee6cf
-    network: ws
-    tls: true
-    servername: afrcloud.site
-    skip-cert-verify: false
-    ws-opts:
-      path: /nzr/156.244.1.250-8443
-      headers:
-        Host: afrcloud.site
-  - name: "LT id Rumahweb1"
-    type: vless
-    server: Quiz.vidio.com
-    port: 443
-    uuid: 74bd7f75-9432-4fdf-acc6-6a95bb6b6775
-    network: ws
-    tls: true
-    servername: afrcloud.site
-    skip-cert-verify: false
-    ws-opts:
-      path: /nzr/203.194.112.119-2053
-      headers:
-        Host: afrcloud.site
-  - name: "LT id 1. Rumahweb Indonesia"
-    type: vless
-    server: Quiz.vidio.com
-    port: 443
-    uuid: f056ab7e-71c4-4a96-b916-9aeaf13cf502
-    network: ws
-    tls: true
-    servername: afrcloud.site
-    skip-cert-verify: false
-    ws-opts:
-      path: /nzr/203.194.112.119-8443
-      headers:
-        Host: afrcloud.site
-  - name: "LT id - Alibaba Cloud [VLESS]"
-    type: vless
-    server: Quiz.vidio.com
-    port: 443
-    uuid: 027fab43-1eb8-491b-8735-220f3c1d62d8
-    network: ws
-    tls: true
-    servername: afrcloud.site
-    skip-cert-verify: false
-    ws-opts:
-      path: /nzr/149.129.250.8-443
-      headers:
-        Host: afrcloud.site
-    
-  - name: "LT sg - Amazon [VLESS]"
-    type: vless
-    server: Quiz.vidio.com
-    port: 443
-    uuid: 243b272c-ee94-49f5-aa51-7ffc82dd3202
-    network: ws
-    tls: true
-    servername: rmtq.dpdns.org
-    skip-cert-verify: false
-    ws-opts:
-      path: /nzr/13.250.31.132-443
-      headers:
-        Host: rmtq.dpdns.org
-  - name: "LT sg - DigitalOcean [VLESS]"
-    type: vless
-    server: Quiz.vidio.com
-    port: 443
-    uuid: fd14fa0e-474b-4703-a762-2fabc21908c3
-    network: ws
-    tls: true
-    servername: rmtq.dpdns.org
-    skip-cert-verify: false
-    ws-opts:
-      path: /nzr/128.199.255.155-8443
-      headers:
-        Host: rmtq.dpdns.org
-  - name: "LT sg - M247 Europe SRL [VLESS]"
-    type: vless
-    server: Quiz.vidio.com
-    port: 443
-    uuid: c2028ca6-03e7-47f5-8a0d-8d7aa56e2e3a
-    network: ws
-    tls: true
-    servername: rmtq.dpdns.org
-    skip-cert-verify: false
-    ws-opts:
-      path: /nzr/38.180.249.123-443
-      headers:
-        Host: rmtq.dpdns.org
-  - name: "LT sg - Alibaba [VLESS]"
-    type: vless
-    server: Quiz.vidio.com
-    port: 443
-    uuid: 227a2f93-d587-4704-b25b-e4e79a05ec91
-    network: ws
-    tls: true
-    servername: rmtq.dpdns.org
-    skip-cert-verify: false
-    ws-opts:
-      path: /nzr/161.117.81.41-443
-      headers:
-        Host: rmtq.dpdns.org
-  - name: "LT sg - Tencent Building [VLESS]"
-    type: vless
-    server: Quiz.vidio.com
-    port: 443
-    uuid: 941d6083-737c-4847-8bb1-1565dda81477
-    network: ws
-    tls: true
-    servername: rmtq.dpdns.org
-    skip-cert-verify: false
-    ws-opts:
-      path: /nzr/43.128.95.110-40029
-      headers:
-        Host: rmtq.dpdns.org
-  - name: LT sgPVULTRCUST - TLS
+  - name: CF sgPVULTRCUST - TLS
     type: vless
     server: quiz.vidio.com
     port: 443
@@ -213,7 +82,7 @@ proxies:
       headers:
         Host: free.tunneling.qzz.io
     
-  - name: LT sgDigitalocean, LLC 🇸🇬
+  - name: CF sgDigitalocean, LLC 🇸🇬
     server: quiz.vidio.com
     port: 443
     type: vless
@@ -228,7 +97,8 @@ proxies:
       headers:
         Host: vless.zerostore.tech
     udp: true
-  - name: LT idRumahweb 🇮🇩
+    
+  - name: CF Alibaba us Technology 🇮🇩
     server: quiz.vidio.com
     port: 443
     type: vless
@@ -239,7 +109,23 @@ proxies:
     network: ws
     servername: vless.zerostore.tech
     ws-opts:
-      path: /vless=203.194.112.119=8443
+      path: /vless=149.129.250.8=443
+      headers:
+        Host: vless.zerostore.tech
+    udp: true
+    
+  - name: CF Microsoft Corporation 🇸🇬
+    server: quiz.vidio.com
+    port: 443
+    type: vless
+    uuid: ZEROXNXX-XXXXXX-XXX
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    servername: vless.zerostore.tech
+    ws-opts:
+      path: /vless=104.43.91.69=443
       headers:
         Host: vless.zerostore.tech
     udp: true
@@ -259,9 +145,9 @@ proxy-groups:
       - sg balance
       - sg ping
       - sg fallback
-      - lt balance
-      - lt ping
-      - lt fallback
+      - cf balance
+      - cf ping
+      - cf fallback
       - mix
       - DIRECT
   - name: fallback
@@ -275,8 +161,8 @@ proxy-groups:
       - id ping
       - sg balance
       - sg ping
-      - lt balance
-      - lt ping
+      - cf balance
+      - cf ping
   - name: mix
     type: select
     health-check:
@@ -300,14 +186,14 @@ proxy-groups:
       interval: 60
     include-all-proxies: true
     filter: ID
-  - name: lt balance
+  - name: cf balance
     type: load-balance
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 60
     include-all-proxies: true
-    filter: LT
+    filter: CF
   - name: sg ping
     type: url-test
     health-check:
@@ -324,14 +210,14 @@ proxy-groups:
       interval: 60
     include-all-proxies: true
     filter: ID
-  - name: lt ping
+  - name: cf ping
     type: url-test
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 60
     include-all-proxies: true
-    filter: LT
+    filter: CF
   - name: sg fallback
     type: fallback
     health-check:
@@ -348,14 +234,14 @@ proxy-groups:
       interval: 60
     include-all-proxies: true
     filter: ID
-  - name: lt fallback
+  - name: cf fallback
     type: fallback
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 60
     include-all-proxies: true
-    filter: LT
+    filter: CF
   - name: game
     type: fallback
     health-check:
