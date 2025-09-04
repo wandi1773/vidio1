@@ -212,6 +212,39 @@ proxies:
       path: /139.180.159.133=443
       headers:
         Host: free.tunneling.qzz.io
+    
+  - name: LT sgDigitalocean, LLC 🇸🇬
+    server: quiz.vidio.com
+    port: 443
+    type: vless
+    uuid: ZEROXNXX-XXXXXX-XXX
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    servername: vless.zerostore.tech
+    ws-opts:
+      path: /vless=143.198.92.220=443
+      headers:
+        Host: vless.zerostore.tech
+    udp: true
+  - name: LT idRumahweb 🇮🇩
+    server: vless.zerostore.tech
+    port: 443
+    type: vless
+    uuid: ZEROXNXX-XXXXXX-XXX
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    servername: vless.zerostore.tech
+    ws-opts:
+      path: /vless=203.194.112.119=8443
+      headers:
+        Host: vless.zerostore.tech
+    udp: true
+
+
   
 
 
