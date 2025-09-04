@@ -1,4 +1,4 @@
-proxies:
+ proxies:
   - name: ID 0909support.vidio.com
     server: support.vidio.com
     port: 443
@@ -229,7 +229,7 @@ proxies:
         Host: vless.zerostore.tech
     udp: true
   - name: LT idRumahweb 🇮🇩
-    server: vless.zerostore.tech
+    server: quiz.vidio.com
     port: 443
     type: vless
     uuid: ZEROXNXX-XXXXXX-XXX
