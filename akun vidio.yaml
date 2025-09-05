@@ -33,6 +33,39 @@ proxies:
         Host: id1.paketssh.site
     udp: true
     
+  - name: ID 0610 quiz.vidio.com nusa
+    server: quiz.vidio.com
+    port: 443
+    type: vmess
+    uuid: eab1faf1-f9ca-4f11-a223-68226fbf590d
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-nusa.kedaivpn.cloud
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id-nusa.kedaivpn.cloud
+    udp: true
+  - name: ID 0610 support.vidio.com nusa
+    server: support.vidio.com
+    port: 443
+    type: vmess
+    uuid: eab1faf1-f9ca-4f11-a223-68226fbf590d
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-nusa.kedaivpn.cloud
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id-nusa.kedaivpn.cloud
+    udp: true
+    
   - name: ID quiz.vidio.comspider
     server: quiz.vidio.com
     port: 443
