@@ -33,6 +33,39 @@ proxies:
         Host: id1.paketssh.site
     udp: true
     
+  - name: ID quiz.vidio.comspider
+    server: quiz.vidio.com
+    port: 443
+    type: vmess
+    uuid: 126e2fc5-e246-41a0-994f-a7f1563bd211
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ger.spidermanprem.online
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: ger.spidermanprem.online
+    udp: true
+  - name: ID support.vidio.comspider
+    server: support.vidio.com
+    port: 443
+    type: vmess
+    uuid: 126e2fc5-e246-41a0-994f-a7f1563bd211
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ger.spidermanprem.online
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: ger.spidermanprem.online
+    udp: true
+    
   - name: CF sgPVULTRCUST - TLS
     type: vless
     server: quiz.vidio.com
