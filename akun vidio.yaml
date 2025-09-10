@@ -211,6 +211,36 @@ proxies:
       headers:
         Host: free-tendo.store
     udp: true
+    
+  - name: ID quiz.vidio.comuser_2491631b
+    server: quiz.vidio.com
+    port: 443
+    type: vless
+    uuid: 2491631b-e3ef-47bf-b7a7-c3a611224385
+    tls: true
+    skip-cert-verify: true
+    servername: gyatt.hiniature.xyz
+    network: ws
+    ws-opts:
+      path: /zelp/vless
+      headers:
+        Host: gyatt.hiniature.xyz
+    udp: true
+    
+  - name: ID support.vidio.comuser_2491631b
+    server: support.vidio.com
+    port: 443
+    type: vless
+    uuid: 2491631b-e3ef-47bf-b7a7-c3a611224385
+    tls: true
+    skip-cert-verify: true
+    servername: gyatt.hiniature.xyz
+    network: ws
+    ws-opts:
+      path: /zelp/vless
+      headers:
+        Host: gyatt.hiniature.xyz
+    udp: true
 
 proxy-groups:
   - name: select
