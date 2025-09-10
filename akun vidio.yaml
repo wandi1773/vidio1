@@ -66,39 +66,6 @@ proxies:
         Host: id-nusa.kedaivpn.cloud
     udp: true
     
-  - name: ID quiz.vidio.comspider
-    server: quiz.vidio.com
-    port: 443
-    type: vmess
-    uuid: 126e2fc5-e246-41a0-994f-a7f1563bd211
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ger.spidermanprem.online
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: ger.spidermanprem.online
-    udp: true
-  - name: ID support.vidio.comspider
-    server: support.vidio.com
-    port: 443
-    type: vmess
-    uuid: 126e2fc5-e246-41a0-994f-a7f1563bd211
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ger.spidermanprem.online
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: ger.spidermanprem.online
-    udp: true
-    
   - name: CF sgPVULTRCUST - TLS
     type: vless
     server: quiz.vidio.com
@@ -161,39 +128,6 @@ proxies:
       path: /vless=104.43.91.69=443
       headers:
         Host: vless.zerostore.tech
-    udp: true
-    
-  - name: SG 0809quiz.vidio.comfree-TLS
-    server: quiz.vidio.com
-    port: 443
-    type: vmess
-    uuid: b7b82f0c-7f3d-4c85-b309-bc2ff68b19e9
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: oesr.ipserver.web.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: oesr.ipserver.web.id
-    udp: true
-  - name: SG 0809support.vidio.comfree-TLS
-    server: support.vidio.com
-    port: 443
-    type: vmess
-    uuid: b7b82f0c-7f3d-4c85-b309-bc2ff68b19e9
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: oesr.ipserver.web.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: oesr.ipserver.web.id
     udp: true
     
   - name: CF Onidel Pty LTD 🇸🇬
