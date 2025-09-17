@@ -263,6 +263,7 @@ proxy-groups:
       - cf ping
       - cf fallback
       - mix
+      - zoom
       - DIRECT
   - name: fallback
     type: fallback
