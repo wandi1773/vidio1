@@ -32,6 +32,23 @@ proxies:
       headers:
         Host: id1.paketssh.site
     udp: true
+
+  - name: ZM 0909support.zoom.us
+    server: support.zoom.us
+    port: 443
+    type: vmess
+    uuid: 9364fca6-c904-4429-bebb-49a52c46814a
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id1.paketssh.site
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id1.paketssh.site
+    udp: true
     
   - name: ID 0610 quiz.vidio.com nusa
     server: quiz.vidio.com
@@ -51,6 +68,22 @@ proxies:
     udp: true
   - name: ID 0610 support.vidio.com nusa
     server: support.vidio.com
+    port: 443
+    type: vmess
+    uuid: eab1faf1-f9ca-4f11-a223-68226fbf590d
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-nusa.kedaivpn.cloud
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id-nusa.kedaivpn.cloud
+    udp: true
+  - name: ZM 0610 support.zoom.us nusa
+    server: support.zoom.us
     port: 443
     type: vmess
     uuid: eab1faf1-f9ca-4f11-a223-68226fbf590d
@@ -334,7 +367,14 @@ proxy-groups:
       - id balance
       - sg ping
       - sg balance
-     
+  - name: zoom
+    type: select
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 60
+    include-all-proxies: true
+    filter: ZM
 
 rule-providers:
   basicads:
