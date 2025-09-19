@@ -33,7 +33,7 @@ proxies:
         Host: id1.paketssh.site
     udp: true
 
-  - name: ZM 0909support.zoom.us
+  - name: ID ZM 0909support.zoom.us
     server: support.zoom.us
     port: 443
     type: vmess
@@ -82,7 +82,7 @@ proxies:
       headers:
         Host: id-nusa.kedaivpn.cloud
     udp: true
-  - name: ZM 0610 support.zoom.us nusa
+  - name: ID ZM 0610 support.zoom.us nusa
     server: support.zoom.us
     port: 443
     type: vmess
