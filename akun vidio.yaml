@@ -99,6 +99,41 @@ proxies:
         Host: id-nusa.kedaivpn.cloud
     udp: true
     
+    proxies:
+  - name: ID 2410quiz.vidio.com biznet
+    server: quiz.vidio.com
+    port: 443
+    type: vmess
+    uuid: 361c7eff-a09b-4a5b-b2cb-0b2f6cb44613
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-biz2.kedaivpn.cloud
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id-biz2.kedaivpn.cloud
+    udp: true
+    
+  - name: ID 2410support.vidio.com biznet
+    server: support.vidio.com
+    port: 443
+    type: vmess
+    uuid: 361c7eff-a09b-4a5b-b2cb-0b2f6cb44613
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-biz2.kedaivpn.cloud
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id-biz2.kedaivpn.cloud
+    udp: true
+    
   - name: CF sgPVULTRCUST - TLS
     type: vless
     server: quiz.vidio.com
