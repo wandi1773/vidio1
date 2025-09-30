@@ -229,39 +229,7 @@ proxies:
         Host: vless.zerostore.tech
     udp: true
     
-  - name: SG 3010 quiz.vidio.com(sgvpn)
-    server: quiz.vidio.com
-    port: 443
-    type: vmess
-    uuid: f5fd817f-c29e-4a8d-9284-f86830f33537
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg.lolicon.biz.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: sg.lolicon.biz.id
-    udp: true
-  - name: SG 3010 support.vidio.com(sgvpn)
-    server: support.vidio.com
-    port: 443
-    type: vmess
-    uuid: f5fd817f-c29e-4a8d-9284-f86830f33537
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg.lolicon.biz.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: sg.lolicon.biz.id
-    udp: true
-
+  
 proxy-groups:
   - name: select
     type: select
