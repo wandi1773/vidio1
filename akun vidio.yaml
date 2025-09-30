@@ -1,55 +1,4 @@
 proxies:
-  - name: ID 0909support.vidio.com
-    server: support.vidio.com
-    port: 443
-    type: vmess
-    uuid: 9364fca6-c904-4429-bebb-49a52c46814a
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id1.paketssh.site
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: id1.paketssh.site
-    udp: true
-    
-  - name: ID 0909quiz.vidio.com
-    server: quiz.vidio.com
-    port: 443
-    type: vmess
-    uuid: 9364fca6-c904-4429-bebb-49a52c46814a
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id1.paketssh.site
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: id1.paketssh.site
-    udp: true
-
-  - name: ID ZM 0909support.zoom.us
-    server: support.zoom.us
-    port: 443
-    type: vmess
-    uuid: 9364fca6-c904-4429-bebb-49a52c46814a
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id1.paketssh.site
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: id1.paketssh.site
-    udp: true
-    
   - name: ID 0610 quiz.vidio.com nusa
     server: quiz.vidio.com
     port: 443
@@ -133,7 +82,41 @@ proxies:
       headers:
         Host: id-biz2.kedaivpn.cloud
     udp: true
+
+  - name: SG 3010quiz.vidio.com sgdo
+    server: quiz.vidio.com
+    port: 443
+    type: vmess
+    uuid: ffd22f87-905c-4c95-a0e7-725fac16b585
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-do2.kedaivpn.cloud
+    network: ws
+    udp: true
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: sg-do2.kedaivpn.cloud
     
+  - name: SG 3010support.vidio.com sgdo
+    server: support.vidio.com
+    port: 443
+    type: vmess
+    uuid: ffd22f87-905c-4c95-a0e7-725fac16b585
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-do2.kedaivpn.cloud
+    network: ws
+    udp: true
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: sg-do2.kedaivpn.cloud
+        
   - name: CF sgPVULTRCUST - TLS
     type: vless
     server: quiz.vidio.com
