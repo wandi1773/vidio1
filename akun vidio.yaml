@@ -1,6 +1,6 @@
 proxies:
-  - name: ID 0610 quiz.vidio.com nusa
-    server: quiz.vidio.com
+  - name: ID 0610 xcv nusa
+    server: 104.17.3.81
     port: 443
     type: vmess
     uuid: eab1faf1-f9ca-4f11-a223-68226fbf590d
@@ -15,42 +15,9 @@ proxies:
       headers:
         Host: id-nusa.kedaivpn.cloud
     udp: true
-  - name: ID 0610 support.vidio.com nusa
-    server: support.vidio.com
-    port: 443
-    type: vmess
-    uuid: eab1faf1-f9ca-4f11-a223-68226fbf590d
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id-nusa.kedaivpn.cloud
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: id-nusa.kedaivpn.cloud
-    udp: true
-  - name: ID ZM 0610 support.zoom.us nusa
-    server: support.zoom.us
-    port: 443
-    type: vmess
-    uuid: eab1faf1-f9ca-4f11-a223-68226fbf590d
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id-nusa.kedaivpn.cloud
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: id-nusa.kedaivpn.cloud
-    udp: true
-    
-    proxies:
-  - name: ID 2410quiz.vidio.com biznet
-    server: quiz.vidio.com
+  
+  - name: ID 2410 xcv biznet
+    server: 104.17.3.81
     port: 443
     type: vmess
     uuid: 361c7eff-a09b-4a5b-b2cb-0b2f6cb44613
@@ -66,25 +33,8 @@ proxies:
         Host: id-biz2.kedaivpn.cloud
     udp: true
     
-  - name: ID 2410support.vidio.com biznet
-    server: support.vidio.com
-    port: 443
-    type: vmess
-    uuid: 361c7eff-a09b-4a5b-b2cb-0b2f6cb44613
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id-biz2.kedaivpn.cloud
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: id-biz2.kedaivpn.cloud
-    udp: true
-
-  - name: SG 3010quiz.vidio.com sgdo
-    server: quiz.vidio.com
+  - name: SG 3010 xcv sgdo
+    server: 104.17.3.81
     port: 443
     type: vmess
     uuid: ffd22f87-905c-4c95-a0e7-725fac16b585
@@ -100,26 +50,9 @@ proxies:
       headers:
         Host: sg-do2.kedaivpn.cloud
     
-  - name: SG 3010support.vidio.com sgdo
-    server: support.vidio.com
-    port: 443
-    type: vmess
-    uuid: ffd22f87-905c-4c95-a0e7-725fac16b585
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg-do2.kedaivpn.cloud
-    network: ws
-    udp: true
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: sg-do2.kedaivpn.cloud
-        
   - name: CF sgPVULTRCUST - TLS
     type: vless
-    server: quiz.vidio.com
+    server: 104.17.3.81
     port: 443
     uuid: eeeeeee3-eeee-4eee-aeee-eeeeeeeeeee5
     cipher: auto
@@ -134,7 +67,7 @@ proxies:
         Host: free.tunneling.qzz.io
     
   - name: CF sgDigitalocean, LLC 🇸🇬
-    server: quiz.vidio.com
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: ZEROXNXX-XXXXXX-XXX
@@ -150,7 +83,7 @@ proxies:
     udp: true
     
   - name: CF Alibaba us Technology 🇮🇩
-    server: quiz.vidio.com
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: ZEROXNXX-XXXXXX-XXX
@@ -166,7 +99,7 @@ proxies:
     udp: true
     
   - name: CF Microsoft Corporation 🇸🇬
-    server: quiz.vidio.com
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: ZEROXNXX-XXXXXX-XXX
@@ -182,7 +115,7 @@ proxies:
     udp: true
     
   - name: CF Onidel Pty LTD 🇸🇬
-    server: quiz.vidio.com
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: ZEROXNXX-XXXXXX-XXX
@@ -198,7 +131,7 @@ proxies:
     udp: true
     
   - name: CF M Europe SRL 🇮🇩
-    server: quiz.vidio.com
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: ZEROXNXX-XXXXXX-XXX
@@ -214,7 +147,7 @@ proxies:
     udp: true
     
   - name: CF Alibaba us Technology 🇸🇬
-    server: quiz.vidio.com
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: ZEROXNXX-XXXXXX-XXX
@@ -249,7 +182,6 @@ proxy-groups:
       - cf ping
       - cf fallback
       - mix
-      - zoom
       - DIRECT
   - name: fallback
     type: fallback
@@ -354,14 +286,7 @@ proxy-groups:
       - id balance
       - sg ping
       - sg balance
-  - name: zoom
-    type: url-test
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 60
-    include-all-proxies: true
-    filter: ZM
+  
 
 rule-providers:
   basicads:
