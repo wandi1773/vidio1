@@ -1,21 +1,4 @@
 proxies:
-  - name: ID 0610 xcv nusa
-    server: 104.17.3.81
-    port: 443
-    type: vmess
-    uuid: eab1faf1-f9ca-4f11-a223-68226fbf590d
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id-nusa.kedaivpn.cloud
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: id-nusa.kedaivpn.cloud
-    udp: true
-  
   - name: ID 2410 xcv biznet
     server: 104.17.3.81
     port: 443
