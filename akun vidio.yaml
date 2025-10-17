@@ -8,12 +8,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: id-biz2.kedaivpn.space
+    servername: id-biz2.kedaissh.space
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: id-biz2.kedaivpn.space
+        Host: id-biz2.kedaissh.space
     udp: true
     
   - name: SG 3010 xcv sgdo
@@ -25,13 +25,13 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sg-do2.kedaivpn.space
+    servername: sg-do2.kedaissh.space
     network: ws
     udp: true
     ws-opts:
       path: /vmess
       headers:
-        Host: sg-do2.kedaivpn.space
+        Host: sg-do2.kedaissh.space
     
   - name: CF sgPVULTRCUST - TLS
     type: vless
