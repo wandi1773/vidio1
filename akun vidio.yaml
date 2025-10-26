@@ -1,21 +1,4 @@
 proxies:
-  - name: ID 2410 xcv biznet
-    server: 104.17.3.81
-    port: 443
-    type: vmess
-    uuid: 361c7eff-a09b-4a5b-b2cb-0b2f6cb44613
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id-biz2.kedaissh.space
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: id-biz2.kedaissh.space
-    udp: true
-    
   - name: SG 3010 xcv sgdo
     server: 104.17.3.81
     port: 443
@@ -33,7 +16,7 @@ proxies:
       headers:
         Host: sg-do2.kedaissh.space
     
-  - name: ID 2611 xcv herza
+  - name: ID 2511 xcv herza
     server: 104.17.3.81
     port: 443
     type: vmess
@@ -49,120 +32,6 @@ proxies:
       path: /vmess
       headers:
         Host: id-herza.kedaissh.space
-        
-    
-  - name: CF sgPVULTRCUST - TLS
-    type: vless
-    server: 104.17.3.81
-    port: 443
-    uuid: eeeeeee3-eeee-4eee-aeee-eeeeeeeeeee5
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: free.tunneling.qzz.io
-    network: ws
-    udp: true
-    ws-opts:
-      path: /139.180.159.133=443
-      headers:
-        Host: free.tunneling.qzz.io
-    
-  - name: CF sgDigitalocean, LLC 🇸🇬
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    servername: vless.zerostore.tech
-    ws-opts:
-      path: /vless=143.198.92.220=443
-      headers:
-        Host: vless.zerostore.tech
-    udp: true
-    
-  - name: CF Alibaba us Technology 🇮🇩
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    servername: vless.zerostore.tech
-    ws-opts:
-      path: /vless=149.129.250.8=443
-      headers:
-        Host: vless.zerostore.tech
-    udp: true
-    
-  - name: CF Microsoft Corporation 🇸🇬
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    servername: vless.zerostore.tech
-    ws-opts:
-      path: /vless=104.43.91.69=443
-      headers:
-        Host: vless.zerostore.tech
-    udp: true
-    
-  - name: CF Onidel Pty LTD 🇸🇬
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    servername: vless.zerostore.tech
-    ws-opts:
-      path: /vless=160.22.79.155=443
-      headers:
-        Host: vless.zerostore.tech
-    udp: true
-    
-  - name: CF M Europe SRL 🇮🇩
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    servername: vless.zerostore.tech
-    ws-opts:
-      path: /vless=38.244.147.68=443
-      headers:
-        Host: vless.zerostore.tech
-    udp: true
-    
-  - name: CF Alibaba us Technology 🇸🇬
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    servername: vless.zerostore.tech
-    ws-opts:
-      path: /vless=8.222.161.217=443
-      headers:
-        Host: vless.zerostore.tech
-    udp: true
-    
   
 proxy-groups:
   - name: select
