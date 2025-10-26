@@ -33,6 +33,24 @@ proxies:
       headers:
         Host: sg-do2.kedaissh.space
     
+  - name: ID 2611 xcv herza
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: a4f5b397-0878-4858-852a-5e5414a5aae1
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-herza.kedaissh.space
+    network: ws
+    udp: true
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id-herza.kedaissh.space
+        
+    
   - name: CF sgPVULTRCUST - TLS
     type: vless
     server: 104.17.3.81
