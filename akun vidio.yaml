@@ -48,9 +48,6 @@ proxy-groups:
       - sg balance
       - sg ping
       - sg fallback
-      - cf balance
-      - cf ping
-      - cf fallback
       - mix
       - DIRECT
   - name: fallback
@@ -64,8 +61,6 @@ proxy-groups:
       - id ping
       - sg balance
       - sg ping
-      - cf balance
-      - cf ping
   - name: mix
     type: select
     health-check:
@@ -89,14 +84,6 @@ proxy-groups:
       interval: 60
     include-all-proxies: true
     filter: ID
-  - name: cf balance
-    type: load-balance
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 60
-    include-all-proxies: true
-    filter: CF
   - name: sg ping
     type: url-test
     health-check:
@@ -113,14 +100,6 @@ proxy-groups:
       interval: 60
     include-all-proxies: true
     filter: ID
-  - name: cf ping
-    type: url-test
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 60
-    include-all-proxies: true
-    filter: CF
   - name: sg fallback
     type: fallback
     health-check:
@@ -137,15 +116,7 @@ proxy-groups:
       interval: 60
     include-all-proxies: true
     filter: ID
-  - name: cf fallback
-    type: fallback
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 60
-    include-all-proxies: true
-    filter: CF
-  - name: game
+  - name: idsg fallback
     type: fallback
     health-check:
       enable: true
@@ -153,9 +124,7 @@ proxy-groups:
       interval: 60
     proxies:
       - id ping
-      - id balance
       - sg ping
-      - sg balance
   
 
 rule-providers:
@@ -183,8 +152,8 @@ rules:
 - RULE-SET,basicads,REJECT
 - RULE-SET,personalads,REJECT
 - GEOSITE,netflix,id ping
-- RULE-SET,indo,id ping
-- GEOSITE,mihoyo,game
+- RULE-SET,indo,idsg fallback
+- GEOSITE,mihoyo,idsg fallback
 - MATCH,select
 
 unified-delay: true
