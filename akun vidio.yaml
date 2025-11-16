@@ -1,6 +1,6 @@
 proxies:
   - name: SG 3010 xcv sgdo
-    server: 104.17.3.81
+    server: 104.18.1.196
     port: 443
     type: vmess
     uuid: ffd22f87-905c-4c95-a0e7-725fac16b585
