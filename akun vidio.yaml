@@ -17,7 +17,7 @@ proxies:
         Host: sg-do2.kedaissh.space
     
   - name: ID 2511 xcv herza
-    server: 104.17.3.81
+    server: 104.18.1.196
     port: 443
     type: vmess
     uuid: a4f5b397-0878-4858-852a-5e5414a5aae1
