@@ -16,22 +16,22 @@ proxies:
       headers:
         Host: sg-do2.kedaissh.space
     
-  - name: ID 2511 xcv herza
+  - name: ID 2812 biznet
     server: 104.18.1.196
     port: 443
     type: vmess
-    uuid: a4f5b397-0878-4858-852a-5e5414a5aae1
+    uuid: 3a9a7a3e-c734-4cfa-9871-83458379557c
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: id-herza.kedaissh.space
+    servername: id-biz.kedaissh.space
     network: ws
     udp: true
     ws-opts:
       path: /vmess
       headers:
-        Host: id-herza.kedaissh.space
+        Host: id-biz.kedaissh.space
         
   - name: CF Digitalocean, LLC 🇸🇬
     server: 104.18.1.196
