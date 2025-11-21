@@ -93,35 +93,6 @@ proxies:
       headers:
         Host: vless.zerov2ray.biz.id
         
-  - name: CF Alibaba us Technology 🇸🇬
-    server: 104.18.1.196
-    port: 443
-    type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
-    tls: true
-    skip-cert-verify: true
-    servername: vless.zerov2ray.biz.id
-    network: ws
-    udp: true
-    ws-opts:
-      path: /vless=8.222.161.217=443
-      headers:
-        Host: vless.zerov2ray.biz.id
-        
-  - name: CF Alibaba us Technology 🇮🇩
-    server: 104.18.1.196
-    port: 443
-    type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
-    tls: true
-    skip-cert-verify: true
-    servername: vless.zerov2ray.biz.id
-    network: ws
-    udp: true
-    ws-opts:
-      path: /vless=149.129.250.8=443
-      headers:
-        Host: vless.zerov2ray.biz.id
         
 proxy-groups:
   - name: select
