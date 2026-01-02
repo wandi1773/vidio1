@@ -1,0 +1,372 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+ipv6: false
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  use-host: true
+  enhanced-mode: fake-ip
+  listen: 0.0.0.0:7874
+  nameserver:
+    - 8.8.8.8
+    - 1.0.0.1
+    - https://dns.google/dns-query
+  fallback:
+    - 1.1.1.1
+    - 8.8.4.4
+    - https://cloudflare-dns.com/dns-query
+    - 112.215.203.254
+  default-nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+    - 112.215.203.254
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - "*.time.edu.cn"
+    - "*.ntp.org.cn"
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - msftconnecttest.com
+    - msftncsi.com
+    - localhost.ptlogin2.qq.com
+    - localhost.sec.qq.com
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - xnotify.xboxlive.com
+    - +.battlenet.com.cn
+    - +.wotgame.cn
+    - +.wggames.cn
+    - +.wowsgame.cn
+    - +.wargaming.net
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - +.stun.*.*
+    - +.stun.*.*.*
+    - +.stun.*.*.*.*
+    - heartbeat.belkin.com
+    - "*.linksys.com"
+    - "*.linksyssmartwifi.com"
+    - "*.router.asus.com"
+    - mesu.apple.com
+    - swscan.apple.com
+    - swquery.apple.com
+    - swdownload.apple.com
+    - swcdn.apple.com
+    - swdist.apple.com
+    - lens.l.google.com
+    - stun.l.google.com
+    - +.nflxvideo.net
+    - "*.square-enix.com"
+    - "*.finalfantasyxiv.com"
+    - "*.ffxiv.com"
+    - "*.mcdn.bilivideo.cn"
+    - +.media.dssott.com
+proxies:
+  - name: SG 3010 xcv sgdo
+    server: 104.18.1.196
+    port: 443
+    type: vmess
+    uuid: ffd22f87-905c-4c95-a0e7-725fac16b585
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-do2.kedaissh.space
+    network: ws
+    udp: true
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: sg-do2.kedaissh.space
+    
+  - name: ID 2701 HerzaWwa-TLS
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: cf6d0b9a-299c-437f-93ee-7a5a2415face
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: hi.xham.web.id
+    network: ws
+    udp: true
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: hi.xham.web.id
+     
+  - name: CF DigitalOcean LLC [VLESS - WS]
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 468302d9-0ae3-43d2-b8a3-91746f969356
+    tls: true
+    skip-cert-verify: true
+    servername: purplelily.qzz.io
+    network: ws
+    udp: true
+    ws-opts:
+      path: /128.199.34.202=8443
+      headers:
+        Host: purplelily.qzz.io
+        
+  - name: CF VULTRCUST [VLESS-TLS]
+    type: vless
+    server: 104.17.3.81
+    port: 443
+    uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
+    network: ws
+    tls: true
+    servername: pavosilene.qzz.io
+    skip-cert-verify: false
+    ws-opts:
+      path: /139.180.159.133=443
+      headers:
+        Host: pavosilene.qzz.io
+    
+  - name:  CF Microsoft Corporation [VLESS-TLS]
+    type: vless
+    server: 104.17.3.81
+    port: 443
+    uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
+    network: ws
+    tls: true
+    servername: pavosilene.qzz.io
+    skip-cert-verify: false
+    ws-opts:
+      path: /104.43.91.69=443
+      headers:
+        Host: pavosilene.qzz.io
+        
+  - name: CF - Onidel Pty Ltd [VLESS-TLS]
+    type: vless
+    server: 104.17.3.81
+    port: 443
+    uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
+    network: ws
+    tls: true
+    servername: pavosilene.qzz.io
+    skip-cert-verify: false
+    ws-opts:
+      path: /160.22.79.155=443
+      headers:
+        Host: pavosilene.qzz.io
+ 
+proxy-groups:
+  - name: select
+    type: select
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 60
+    proxies:
+      - fallback
+      - id balance
+      - id ping
+      - id fallback
+      - sg balance
+      - sg ping
+      - sg fallback
+      - cf balance
+      - cf ping
+      - cf fallback
+      - mix
+      - DIRECT
+  - name: fallback
+    type: fallback
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 60
+    proxies:
+      - id balance
+      - id ping
+      - sg balance
+      - sg ping
+      - cf balance
+      - cf ping
+  - name: mix
+    type: select
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 60
+    include-all-proxies: true
+  - name: sg balance
+    type: load-balance
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 60
+    include-all-proxies: true
+    filter: SG
+  - name: id balance
+    type: load-balance
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 60
+    include-all-proxies: true
+    filter: ID
+  - name: sg ping
+    type: url-test
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 60
+    include-all-proxies: true
+    filter: SG
+  - name: id ping
+    type: url-test
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 60
+    include-all-proxies: true
+    filter: ID
+  - name: sg fallback
+    type: fallback
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 60
+    include-all-proxies: true
+    filter: SG
+  - name: id fallback
+    type: fallback
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 60
+    include-all-proxies: true
+    filter: ID
+  - name: cf balance
+    type: load-balance
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 60
+    include-all-proxies: true
+    filter: CF
+  - name: cf ping
+    type: url-test
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 60
+    include-all-proxies: true
+    filter: CF
+  - name: cf fallback
+    type: fallback
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 60
+    include-all-proxies: true
+    filter: CF
+  - name: idsg fallback
+    type: fallback
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 60
+    proxies:
+      - id ping
+      - sg ping
+  
+
+rule-providers:
+  basicads:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_basicads.yaml
+    interval: 86400
+  
+  personalads:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_personalads.yaml
+    interval: 86400
+    
+  indo:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/malikshi/open_clash/refs/heads/main/rule_provider/rule_indo.yaml
+    interval: 86400
+    
+rules:
+- GEOSITE,category-ads,REJECT
+- GEOSITE,category-ads-all,REJECT
+- RULE-SET,basicads,REJECT
+- RULE-SET,personalads,REJECT
+- GEOSITE,netflix,id ping
+- RULE-SET,indo,idsg fallback
+- GEOSITE,mihoyo,idsg fallback
+- MATCH,select
