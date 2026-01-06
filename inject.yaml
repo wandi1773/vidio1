@@ -169,13 +169,13 @@ proxies:
     uuid: 468302d9-0ae3-43d2-b8a3-91746f969356
     tls: true
     skip-cert-verify: true
-    servername: purplelily.qzz.io
+    servername: iceberg.qzz.io
     network: ws
     udp: true
     ws-opts:
       path: /128.199.34.202=8443
       headers:
-        Host: purplelily.qzz.io
+        Host: iceberg.qzz.io
         
   - name: CF VULTRCUST [VLESS-TLS]
     type: vless
@@ -370,3 +370,4 @@ rules:
 - RULE-SET,indo,idsg fallback
 - GEOSITE,mihoyo,idsg fallback
 - MATCH,select
+
