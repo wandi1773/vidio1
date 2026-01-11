@@ -218,6 +218,80 @@ proxies:
       path: /160.22.79.155=443
       headers:
         Host: pavosilene.qzz.io
+        
+  - name: ID 2701 tsel HerzaWwa-TLS
+    server: 172.66.152.99
+    port: 443
+    type: vmess
+    uuid: cf6d0b9a-299c-437f-93ee-7a5a2415face
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: hi.xham.web.id
+    network: ws
+    udp: true
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: hi.xham.web.id
+     
+  - name: CF Tsel DigitalOcean LLC [VLESS - WS]
+    server: 172.66.152.99
+    port: 443
+    type: vless
+    uuid: 468302d9-0ae3-43d2-b8a3-91746f969356
+    tls: true
+    skip-cert-verify: true
+    servername: iceberg.qzz.io
+    network: ws
+    udp: true
+    ws-opts:
+      path: /128.199.34.202=8443
+      headers:
+        Host: iceberg.qzz.io
+        
+  - name: CF Tsel VULTRCUST [VLESS-TLS]
+    type: vless
+    server: 172.66.152.99
+    port: 443
+    uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
+    network: ws
+    tls: true
+    servername: pavosilene.qzz.io
+    skip-cert-verify: false
+    ws-opts:
+      path: /139.180.159.133=443
+      headers:
+        Host: pavosilene.qzz.io
+    
+  - name:  CF Tsel Microsoft Corporation [VLESS-TLS]
+    type: vless
+    server: 172.66.152.99
+    port: 443
+    uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
+    network: ws
+    tls: true
+    servername: pavosilene.qzz.io
+    skip-cert-verify: false
+    ws-opts:
+      path: /104.43.91.69=443
+      headers:
+        Host: pavosilene.qzz.io
+        
+  - name: CF Tsel Onidel Pty Ltd [VLESS-TLS]
+    type: vless
+    server: 172.66.152.99
+    port: 443
+    uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
+    network: ws
+    tls: true
+    servername: pavosilene.qzz.io
+    skip-cert-verify: false
+    ws-opts:
+      path: /160.22.79.155=443
+      headers:
+        Host: pavosilene.qzz.io
  
 proxy-groups:
   - name: select
@@ -370,4 +444,5 @@ rules:
 - RULE-SET,indo,idsg fallback
 - GEOSITE,mihoyo,idsg fallback
 - MATCH,select
+
 
