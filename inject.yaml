@@ -235,6 +235,20 @@ proxies:
       path: /vmess
       headers:
         Host: hi.xham.web.id
+  
+  - name:  Alibaba Cloud US [VLESS - WS]
+    type: vless
+    server: 104.17.3.81
+    port: 443
+    uuid: 7d6fdf3b-363e-4c6e-bd21-3f00899c5b5b
+    network: ws
+    tls: true
+    servername: antiquewhite.qzz.io
+    skip-cert-verify: false
+    ws-opts:
+      path: /47.90.181.148=443
+      headers:
+        Host: antiquewhite.qzz.io
      
   - name: CF Tsel DigitalOcean LLC [VLESS - WS]
     server: 172.66.152.99
@@ -444,5 +458,6 @@ rules:
 - RULE-SET,indo,idsg fallback
 - GEOSITE,mihoyo,idsg fallback
 - MATCH,select
+
 
 
