@@ -249,6 +249,22 @@ proxies:
       path: /47.90.181.148=443
       headers:
         Host: antiquewhite.qzz.io
+        
+  - name: US+Vless-WS(2026-01-23)
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 044a9510-f2bc-11f0-a2da-1239d0255272
+    tls: true
+    skip-cert-verify: true
+    servername: us1.socifiles.com
+    network: ws
+    udp: true
+    ws-opts:
+      path: /vlws
+      headers:
+        Host: us1.socifiles.com
+        
      
   - name: CF Tsel DigitalOcean LLC [VLESS - WS]
     server: 172.66.152.99
@@ -458,6 +474,7 @@ rules:
 - RULE-SET,indo,idsg fallback
 - GEOSITE,mihoyo,idsg fallback
 - MATCH,select
+
 
 
 
