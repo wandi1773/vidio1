@@ -250,6 +250,20 @@ proxies:
       headers:
         Host: antiquewhite.qzz.io
         
+  - name: CF Amazoncom Inc [VLESS-TLS]
+    type: vless
+    server: 104.17.3.81
+    port: 443
+    uuid: d57de3fe-98a6-4b7b-a8cd-b2fb224a9895
+    network: ws
+    tls: true
+    servername: heavenlyblue.qzz.io
+    skip-cert-verify: false
+    ws-opts:
+      path: /43.218.77.16=1443
+      headers:
+        Host: heavenlyblue.qzz.io
+        
   - name: US+Vless-WS(2026-01-23)
     server: 104.17.3.81
     port: 443
@@ -474,6 +488,7 @@ rules:
 - RULE-SET,indo,idsg fallback
 - GEOSITE,mihoyo,idsg fallback
 - MATCH,select
+
 
 
 
