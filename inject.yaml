@@ -184,12 +184,12 @@ proxies:
     uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
     network: ws
     tls: true
-    servername: pavosilene.qzz.io
+    servername: antiquewhite.qzz.io
     skip-cert-verify: false
     ws-opts:
       path: /139.180.159.133=443
       headers:
-        Host: pavosilene.qzz.io
+        Host: antiquewhite.qzz.io
     
   - name:  CF Microsoft Corporation [VLESS-TLS]
     type: vless
@@ -198,12 +198,12 @@ proxies:
     uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
     network: ws
     tls: true
-    servername: pavosilene.qzz.io
+    servername: cornsilk.qzz.io
     skip-cert-verify: false
     ws-opts:
       path: /104.43.91.69=443
       headers:
-        Host: pavosilene.qzz.io
+        Host: cornsilk.qzz.io
         
   - name: CF - Onidel Pty Ltd [VLESS-TLS]
     type: vless
@@ -212,12 +212,12 @@ proxies:
     uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
     network: ws
     tls: true
-    servername: pavosilene.qzz.io
+    servername: gulfblue.qzz.io
     skip-cert-verify: false
     ws-opts:
       path: /160.22.79.155=443
       headers:
-        Host: pavosilene.qzz.io
+        Host: gulfblue.qzz.io
         
   - name: ID 2701 tsel HerzaWwa-TLS
     server: 172.66.152.99
@@ -474,6 +474,7 @@ rules:
 - RULE-SET,indo,idsg fallback
 - GEOSITE,mihoyo,idsg fallback
 - MATCH,select
+
 
 
 
