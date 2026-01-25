@@ -161,6 +161,24 @@ proxies:
       path: /vmess
       headers:
         Host: hi.xham.web.id
+        
+  - name: ID 2402 BiznetFasss-TLS
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: 1de97bf1-d0db-472f-a619-17a141363f16
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: go.hamxtun.web.id
+    network: ws
+    udp: true
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: go.hamxtun.web.id
+        
      
   - name: CF DigitalOcean LLC [VLESS - WS]
     server: 104.17.3.81
@@ -488,6 +506,7 @@ rules:
 - RULE-SET,indo,idsg fallback
 - GEOSITE,mihoyo,idsg fallback
 - MATCH,select
+
 
 
 
