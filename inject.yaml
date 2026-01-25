@@ -187,13 +187,13 @@ proxies:
     uuid: 468302d9-0ae3-43d2-b8a3-91746f969356
     tls: true
     skip-cert-verify: true
-    servername: heavenlyblue.qzz.io
+    servername: afsbconfessout.qzz.io
     network: ws
     udp: true
     ws-opts:
       path: /128.199.34.202=8443
       headers:
-        Host: heavenlyblue.qzz.io
+        Host: afsbconfessout.qzz.io
         
   - name: CF VULTRCUST [VLESS-TLS]
     type: vless
@@ -202,12 +202,12 @@ proxies:
     uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
     network: ws
     tls: true
-    servername: heavenlyblue.qzz.io
+    servername: alliedhosting.qzz.io
     skip-cert-verify: false
     ws-opts:
       path: /139.180.159.133=443
       headers:
-        Host: heavenlyblue.qzz.io
+        Host: alliedhosting.qzz.io
     
   - name:  CF Microsoft Corporation [VLESS-TLS]
     type: vless
@@ -216,12 +216,12 @@ proxies:
     uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
     network: ws
     tls: true
-    servername: heavenlyblue.qzz.io
+    servername: apexbhao1.qzz.io
     skip-cert-verify: false
     ws-opts:
       path: /104.43.91.69=443
       headers:
-        Host: heavenlyblue.qzz.io
+        Host: apexbhao1.qzz.io
         
   - name: CF - Onidel Pty Ltd [VLESS-TLS]
     type: vless
@@ -230,29 +230,12 @@ proxies:
     uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
     network: ws
     tls: true
-    servername: heavenlyblue.qzz.io
+    servername: corvusazalea.qzz.io
     skip-cert-verify: false
     ws-opts:
       path: /160.22.79.155=443
       headers:
-        Host: heavenlyblue.qzz.io
-        
-  - name: ID 2701 tsel HerzaWwa-TLS
-    server: 172.66.152.99
-    port: 443
-    type: vmess
-    uuid: cf6d0b9a-299c-437f-93ee-7a5a2415face
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: hi.xham.web.id
-    network: ws
-    udp: true
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: hi.xham.web.id
+        Host: corvusazalea.qzz.io
   
   - name:  Alibaba Cloud US [VLESS - WS]
     type: vless
@@ -261,12 +244,12 @@ proxies:
     uuid: 7d6fdf3b-363e-4c6e-bd21-3f00899c5b5b
     network: ws
     tls: true
-    servername: antiquewhite.qzz.io
+    servername: delta090.qzz.io
     skip-cert-verify: false
     ws-opts:
       path: /47.90.181.148=443
       headers:
-        Host: antiquewhite.qzz.io
+        Host: delta090.qzz.io
         
   - name: CF Amazoncom Inc [VLESS-TLS]
     type: vless
@@ -275,85 +258,13 @@ proxies:
     uuid: d57de3fe-98a6-4b7b-a8cd-b2fb224a9895
     network: ws
     tls: true
-    servername: heavenlyblue.qzz.io
+    servername: aquilacalyx.qzz.io
     skip-cert-verify: false
     ws-opts:
       path: /43.218.77.16=1443
       headers:
-        Host: heavenlyblue.qzz.io
+        Host: aquilacalyx.qzz.io
         
-  - name: US+Vless-WS(2026-01-23)
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 044a9510-f2bc-11f0-a2da-1239d0255272
-    tls: true
-    skip-cert-verify: true
-    servername: us1.socifiles.com
-    network: ws
-    udp: true
-    ws-opts:
-      path: /vlws
-      headers:
-        Host: us1.socifiles.com
-        
-     
-  - name: CF Tsel DigitalOcean LLC [VLESS - WS]
-    server: 172.66.152.99
-    port: 443
-    type: vless
-    uuid: 468302d9-0ae3-43d2-b8a3-91746f969356
-    tls: true
-    skip-cert-verify: true
-    servername: iceberg.qzz.io
-    network: ws
-    udp: true
-    ws-opts:
-      path: /128.199.34.202=8443
-      headers:
-        Host: iceberg.qzz.io
-        
-  - name: CF Tsel VULTRCUST [VLESS-TLS]
-    type: vless
-    server: 172.66.152.99
-    port: 443
-    uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
-    network: ws
-    tls: true
-    servername: pavosilene.qzz.io
-    skip-cert-verify: false
-    ws-opts:
-      path: /139.180.159.133=443
-      headers:
-        Host: pavosilene.qzz.io
-    
-  - name:  CF Tsel Microsoft Corporation [VLESS-TLS]
-    type: vless
-    server: 172.66.152.99
-    port: 443
-    uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
-    network: ws
-    tls: true
-    servername: pavosilene.qzz.io
-    skip-cert-verify: false
-    ws-opts:
-      path: /104.43.91.69=443
-      headers:
-        Host: pavosilene.qzz.io
-        
-  - name: CF Tsel Onidel Pty Ltd [VLESS-TLS]
-    type: vless
-    server: 172.66.152.99
-    port: 443
-    uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
-    network: ws
-    tls: true
-    servername: pavosilene.qzz.io
-    skip-cert-verify: false
-    ws-opts:
-      path: /160.22.79.155=443
-      headers:
-        Host: pavosilene.qzz.io
  
 proxy-groups:
   - name: select
@@ -506,6 +417,7 @@ rules:
 - RULE-SET,indo,idsg fallback
 - GEOSITE,mihoyo,idsg fallback
 - MATCH,select
+
 
 
 
