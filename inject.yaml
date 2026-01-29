@@ -187,13 +187,13 @@ proxies:
     uuid: 468302d9-0ae3-43d2-b8a3-91746f969356
     tls: true
     skip-cert-verify: true
-    servername: afsbconfessout.qzz.io
+    servername: afrcloud1.c01.kr
     network: ws
     udp: true
     ws-opts:
       path: /128.199.34.202=8443
       headers:
-        Host: afsbconfessout.qzz.io
+        Host: afrcloud1.c01.kr
         
   - name: CF VULTRCUST [VLESS-TLS]
     type: vless
@@ -202,12 +202,12 @@ proxies:
     uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
     network: ws
     tls: true
-    servername: alliedhosting.qzz.io
+    servername: afrcloud2.c01.kr
     skip-cert-verify: false
     ws-opts:
       path: /139.180.159.133=443
       headers:
-        Host: alliedhosting.qzz.io
+        Host: afrcloud2.c01.kr
     
   - name:  CF Microsoft Corporation [VLESS-TLS]
     type: vless
@@ -216,12 +216,12 @@ proxies:
     uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
     network: ws
     tls: true
-    servername: apexbhao1.qzz.io
+    servername: afrcloud3.c01.kr
     skip-cert-verify: false
     ws-opts:
       path: /104.43.91.69=443
       headers:
-        Host: apexbhao1.qzz.io
+        Host: afrcloud3.c01.kr
         
   - name: CF - Onidel Pty Ltd [VLESS-TLS]
     type: vless
@@ -230,12 +230,12 @@ proxies:
     uuid: 72fff5e0-8c07-4f6a-889c-e583d7e5284a
     network: ws
     tls: true
-    servername: corvusazalea.qzz.io
+    servername: afrcloud1.mmv.kr
     skip-cert-verify: false
     ws-opts:
       path: /160.22.79.155=443
       headers:
-        Host: corvusazalea.qzz.io
+        Host: afrcloud1.mmv.kr
   
   - name:  Alibaba Cloud US [VLESS - WS]
     type: vless
@@ -244,12 +244,12 @@ proxies:
     uuid: 7d6fdf3b-363e-4c6e-bd21-3f00899c5b5b
     network: ws
     tls: true
-    servername: delta090.qzz.io
+    servername: afrcloud2.mmv.kr
     skip-cert-verify: false
     ws-opts:
       path: /47.90.181.148=443
       headers:
-        Host: delta090.qzz.io
+        Host: afrcloud2.mmv.kr
         
   - name: CF Amazoncom Inc [VLESS-TLS]
     type: vless
@@ -258,12 +258,12 @@ proxies:
     uuid: d57de3fe-98a6-4b7b-a8cd-b2fb224a9895
     network: ws
     tls: true
-    servername: aquilacalyx.qzz.io
+    servername: afrcloud3.mmv.kr
     skip-cert-verify: false
     ws-opts:
       path: /43.218.77.16=1443
       headers:
-        Host: aquilacalyx.qzz.io
+        Host: afrcloud3.mmv.kr
         
  
 proxy-groups:
@@ -417,6 +417,7 @@ rules:
 - RULE-SET,indo,idsg fallback
 - GEOSITE,mihoyo,idsg fallback
 - MATCH,select
+
 
 
 
