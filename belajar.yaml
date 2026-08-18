@@ -128,22 +128,23 @@ dns:
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
 proxies:
-  - name: SG 3010 xcv sgdo
-    server: 104.18.1.196
+  - name: Ssa-TLS 2108
+    server: 104.18.8.196
     port: 443
     type: vmess
-    uuid: ffd22f87-905c-4c95-a0e7-725fac16b585
+    uuid: af245746-54b8-4ca3-ac11-8c6933794cf0
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sg-do2.kedaissh.space
+    servername: wi.xhmt.my.id
     network: ws
     udp: true
     ws-opts:
       path: /vmess
       headers:
-        Host: sg-do2.kedaissh.space
+        Host: wi.xhmt.my.id
+        
  
 proxy-groups:
   - name: select
