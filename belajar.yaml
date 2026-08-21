@@ -128,7 +128,7 @@ dns:
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
 proxies:
-  - name: Ssa-TLS 2108
+  - name: Ssa-TLS 1009
     server: 104.18.8.196
     port: 443
     type: vmess
