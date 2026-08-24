@@ -173,7 +173,25 @@ proxies:
     ws-opts:
       path: /vless
       headers:
-        Host: 172.66.152.99
+        Host: eh.xtun.biz.id
+
+        
+  - name: Fffa-TLS 3108
+    server: 172.66.152.99
+    port: 443
+    type: vmess
+    uuid: 7cbf2ea4-f5b3-4905-8dd0-c1682b9668ef
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: eh.xtun.biz.id
+    network: ws
+    udp: true
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: eh.xtun.biz.id
         
  
  
