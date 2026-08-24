@@ -144,7 +144,22 @@ proxies:
       path: /vmess
       headers:
         Host: wi.xhmt.my.id
-        
+  
+  - name: Backup5 2808
+    server: ilped.kedaissh.space
+    port: 443
+    type: trojan
+    password: f30b0740-5dfc-4f0c-bab5-621772e403b9
+    tls: true
+    skip-cert-verify: true
+    servername: eh.xtun.biz.id
+    network: ws
+    udp: true
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: eh.xtun.biz.id
+ 
  
 proxy-groups:
   - name: select
