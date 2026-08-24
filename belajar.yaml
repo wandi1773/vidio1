@@ -146,7 +146,7 @@ proxies:
         Host: wi.xhmt.my.id
   
   - name: Backup5 2808
-    server: ilped.kedaissh.space
+    server: 104.18.8.196
     port: 443
     type: trojan
     password: f30b0740-5dfc-4f0c-bab5-621772e403b9
