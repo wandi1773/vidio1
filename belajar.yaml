@@ -159,6 +159,22 @@ proxies:
       path: /trojan-ws
       headers:
         Host: eh.xtun.biz.id
+
+  - name: Backup2
+    server: 172.66.152.99
+    port: 443
+    type: vless
+    uuid: d66cd6ef-8265-435a-8965-36e26525707b
+    tls: true
+    skip-cert-verify: true
+    servername: eh.xtun.biz.id
+    network: ws
+    udp: true
+    ws-opts:
+      path: /vless
+      headers:
+        Host: 172.66.152.99
+        
  
  
 proxy-groups:
