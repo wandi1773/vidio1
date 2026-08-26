@@ -144,37 +144,6 @@ proxies:
       path: /vmess
       headers:
         Host: wi.xhmt.my.id
-  
-  - name: Backup5 2808
-    server: 104.18.8.196
-    port: 443
-    type: trojan
-    password: f30b0740-5dfc-4f0c-bab5-621772e403b9
-    tls: true
-    skip-cert-verify: true
-    servername: eh.xtun.biz.id
-    network: ws
-    udp: true
-    ws-opts:
-      path: /trojan-ws
-      headers:
-        Host: eh.xtun.biz.id
-
-  - name: Backup2
-    server: 172.66.152.99
-    port: 443
-    type: vless
-    uuid: d66cd6ef-8265-435a-8965-36e26525707b
-    tls: true
-    skip-cert-verify: true
-    servername: eh.xtun.biz.id
-    network: ws
-    udp: true
-    ws-opts:
-      path: /vless
-      headers:
-        Host: eh.xtun.biz.id
-
         
   - name: Fffa-TLS 3108
     server: 172.66.152.99
@@ -192,7 +161,24 @@ proxies:
       path: /vmess
       headers:
         Host: eh.xtun.biz.id
-        
+
+      
+  - name: saa132 2509
+    server: 172.66.152.99
+    type: vmess
+    port: 443
+    uuid: bdf23ddf-a27d-49b4-bed3-31a93d03249c
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: nusa.vpnstore28.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: nusa.vpnstore28.my.id
+    udp: true
  
  
 proxy-groups:
